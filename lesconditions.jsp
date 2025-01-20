@@ -54,6 +54,12 @@ Oui C est compris entre A et B</p>
 <% } else { %>
 <p>Le nombre est impair.</p>
 <% } %>
+
+<h2>Exercice 3 : Jeu du chiffre aleatoire</h2>
+<p>Écrivez un programme afin que le joueur devine le chiffre aléatoire généré par le système.</p>
+
+
+
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
