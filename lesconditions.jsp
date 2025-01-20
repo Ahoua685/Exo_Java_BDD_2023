@@ -27,6 +27,7 @@
             <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
             <p>Valeur 1 est égale à Valeur 2.</p>
+         
         <% } %>
    
     
@@ -45,6 +46,7 @@ Oui C est compris entre A et B</p>
 <p>Le nombre est pair.</p>
 <% } else { %>
 <p>Le nombre est impair.</p>
+<% }
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
