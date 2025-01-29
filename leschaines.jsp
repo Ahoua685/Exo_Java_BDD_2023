@@ -35,6 +35,19 @@
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
+<% char chaine[];
+int cpt = 0;
+for(int i = 0; i < longueurchaine; i++) {
+if(chaine[i] == 'e') {cpt++;}
+} %>
+<p>Il y a <%= cpt%> lettre "e"</p>
+%>
+
+
+
+
+
+
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
 Exemple : Bonjour</br>
