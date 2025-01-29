@@ -30,7 +30,17 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 
- 
+ <% for (int j = 1; j <= cpt; j++) { %>
+            <p>
+            <% for (int i = 1; i <= cpt; i++) { %>
+                <%= "*" %>
+            <% } %>
+            </p>
+        <% } %>
+
+    <% } else { %>
+        <p>Veuillez saisir une valeur valide.</p>
+    <% } %>
 
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
