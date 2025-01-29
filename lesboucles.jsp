@@ -141,7 +141,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <% for (int i =0; i<cpt; i++) { %>
-<%= cpt %> x <%= i %> = <%= cpt * i %></p>
+<%= cpt %> x <%= i %> = <%= cpt * i %>
         <% } %>
 
 
