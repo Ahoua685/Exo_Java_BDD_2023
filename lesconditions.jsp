@@ -42,7 +42,7 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 
     
 
-<% if (intvaleur3 >= intvaleur1 && intvaleur3 < intvaleur2) { %>
+<% if ((intValeur3 > intValeur1 && intValeur3 < intValeur2) || (intValeur3 > intValeur2 && intValeur3 < intValeur1)) { %>
 <p>La valeur de C (<%=intvaleur3%>) est comprise entre A(<%=intvaleur1%>) et B(<%=intvaleur2%>).</p>
 <% } else { %>
 <p>La valeur de C (<%=intvaleur3%>) n'est pas comprise entre A(<%=intvaleur1%>) et B(<%=intvaleur2%>).</p>
