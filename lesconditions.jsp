@@ -12,16 +12,16 @@
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
-    <% String valeur1 = request.getParameter("valeur1"); %>
-    <% String valeur2 = request.getParameter("valeur2"); %>
-    <% String valeur3 = request.getParameter("valeur3"); %>
+    <% String Valeur1 = request.getParameter("Valeur1"); %>
+    <% String Valeur2 = request.getParameter("Valeur2"); %>
+    <% String Valeur3 = request.getParameter("Valeur3"); %>
 
     <%-- Vérification de la condition entre les deux valeurs --%>
-    <% if (valeur1 != null && valeur2 != null && valeur3 != null) { %>
+    <% if (Valeur1 != null && Valeur2 != null && Valeur3 != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intValeur1 = Integer.parseInt(valeur1); %>
-        <% int intValeur2 = Integer.parseInt(valeur2); %>
-        <% int intValeur3 = Integer.parseInt(valeur3); %>
+        <% int intValeur1 = Integer.parseInt(Valeur1); %>
+        <% int intValeur2 = Integer.parseInt(Valeur2); %>
+        <% int intValeur3 = Integer.parseInt(Valeur3); %>
         
         <%-- Condition if pour comparer les valeurs --%>
         <% if (intValeur1 > intValeur2) { %>
@@ -43,9 +43,9 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
     
 
 <% if ((intValeur3 > intValeur1 && intValeur3 < intValeur2) || (intValeur3 > intValeur2 && intValeur3 < intValeur1)) { %>
-<p>La valeur de C (<%=intvaleur3%>) est comprise entre A(<%=intvaleur1%>) et B(<%=intvaleur2%>).</p>
+<p>La valeur de C (<%=intValeur3%>) est comprise entre A(<%=intValeur1%>) et B(<%=intValeur2%>).</p>
 <% } else { %>
-<p>La valeur de C (<%=intvaleur3%>) n'est pas comprise entre A(<%=intvaleur1%>) et B(<%=intvaleur2%>).</p>
+<p>La valeur de C (<%=intValeur3%>) n'est pas comprise entre A(<%=intValeur1%>) et B(<%=intValeur2%>).</p>
 <% } %>
 
 
