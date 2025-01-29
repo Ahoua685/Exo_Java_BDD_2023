@@ -19,9 +19,11 @@
     <%-- Vérification de la condition entre les deux valeurs --%>
     <% if (Valeur1 != null && Valeur2 != null && Valeur3 != null) { %>
         <%-- Conversion des valeurs en entiers pour la comparaison --%>
-        <% int intValeur1 = Integer.parseInt(Valeur1); %>
-        <% int intValeur2 = Integer.parseInt(Valeur2); %>
-        <% int intValeur3 = Integer.parseInt(Valeur3); %>
+        <% 
+          int intValeur1 = Integer.parseInt(Valeur1); 
+          int intValeur2 = Integer.parseInt(Valeur2); 
+          int intValeur3 = Integer.parseInt(Valeur3); 
+        %>
         
         <%-- Condition if pour comparer les valeurs --%>
         <% if (intValeur1 > intValeur2) { %>
@@ -38,18 +40,11 @@
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 
-
-
-    
-
 <% if ((intValeur3 > intValeur1 && intValeur3 < intValeur2) || (intValeur3 > intValeur2 && intValeur3 < intValeur1)) { %>
 <p>La valeur de C (<%=intValeur3%>) est comprise entre A(<%=intValeur1%>) et B(<%=intValeur2%>).</p>
 <% } else { %>
 <p>La valeur de C (<%=intValeur3%>) n'est pas comprise entre A(<%=intValeur1%>) et B(<%=intValeur2%>).</p>
 <% } %>
-
-
-
 
 Exemple :</br>
 A = 10</br>
