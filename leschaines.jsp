@@ -35,13 +35,16 @@
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
-<% char chaine[];
+<%
+String chaine = "Bienvenue chez moi"; 
 int cpt = 0;
-for(int i = 0; i < longueurchaine; i++) {
-if(chaine[i] == 'e') {cpt++;}
-} %>
-<p>Il y a <%= cpt%> lettre "e"</p>
+for (int i = 0; i < chaine.length(); i++) {
+    if (chaine.charAt(i) == 'e') {
+        cpt++;
+    }
+}
 %>
+<p>Il y a <%= cpt %> lettre(s) "e"</p>
 
 
 
