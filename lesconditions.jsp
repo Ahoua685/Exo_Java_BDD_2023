@@ -34,6 +34,26 @@
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
+
+ <% String valeurA = request.getParameter("valeurA"); %>
+ <% String valeurB = request.getParameter("valeurB"); %>
+ <% String valeurC = request.getParameter("valeurC"); %>
+
+<% if (valeurA != null && valeurB != null && valeurC != null) { %>
+        <% int intValeurA = Integer.parseInt(valeurA); %>
+        <% int intValeurB = Integer.parseInt(valeurB); %>
+        <% int intValeurC = Integer.parseInt(valeurC); %>
+    
+
+<% if (valeurC >= valeurA && valeurC < valeur B) { %>
+<p>La valeur de C est comprise entre A et B</p>
+<% } else { %>
+<p>La valeur de C n'est pas comprise entre A et B</p>
+<% } %>
+
+
+
+
 Exemple :</br>
 A = 10</br>
 B = 20</br>
