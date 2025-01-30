@@ -47,9 +47,6 @@ for (int i = 0; i < chaine.length(); i++) {
 
 
 
-
-
-
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
 <%
@@ -71,6 +68,17 @@ r</p>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
+
+<%
+for (int i = 0; i < chaine.length(); i++) {
+    %>
+        <p><%= chaine %></br></p>
+    <% 
+    }
+ %>
+
+
+
 Exemple : L'hiver sera pluvieux</br>
 L'hiver</br>
 sera</br>
